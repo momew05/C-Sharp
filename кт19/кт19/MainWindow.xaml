@@ -1,0 +1,116 @@
+﻿<Window x:Class="кт19.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:кт19"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Margin="5">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="130"><Run Text="1"/><Run Text=". "/><Run Text="Сколько "/><Run Text="будет 5 + 5?"/></TextBlock>
+            <RadioButton Checked="answer" Unchecked="answer" GroupName="Answer1" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,5,0,10"/>
+            <RadioButton Checked="answer" Unchecked="answer" x:Name="correct1" GroupName="Answer1" Content="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,10"/>
+            <RadioButton Checked="answer" Unchecked="answer" GroupName="Answer1" Content="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <StackPanel Margin="5" Grid.Row="1" Grid.Column="0">
+            <TextBlock Text="2. Выберите овощи" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="130"/>
+            <CheckBox Checked="answer" Unchecked="answer" Content=" Помидор" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,5,0,10"/>
+            <CheckBox Checked="answer" Unchecked="answer" x:Name="correct2" Content=" Картошка" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,10"/>
+            <CheckBox Checked="answer" Unchecked="answer" x:Name="correct22" Content=" Огурец" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <StackPanel Margin="5" Grid.Row="2" Grid.Column="0">
+            <TextBlock Text="3. Кто автор теории относительности?" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="300"></TextBlock>
+            <RadioButton Checked="answer" Unchecked="answer" GroupName="Answer2" Content="Исаак Ньютон" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,5,0,10"/>
+            <RadioButton Checked="answer" Unchecked="answer" x:Name="correct3" GroupName="Answer2" Content="Альберт Эйнштейн" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,10"/>
+            <RadioButton Checked="answer" Unchecked="answer" GroupName="Answer2" Content="Никола Тесла" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <StackPanel Margin="5" Grid.Row="3" Grid.Column="0">
+            <TextBlock Text="4. Какие из этих языков романские?" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="200"></TextBlock>
+            <CheckBox Checked="answer" Unchecked="answer" Content=" Английский" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,5,0,10"/>
+            <CheckBox Checked="answer" Unchecked="answer" x:Name="correct4" Content=" Румынский" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top"/>
+            <CheckBox Checked="answer" Unchecked="answer" Content=" Немецкий" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <StackPanel Margin="5" Grid.Row="0" Grid.Column="1">
+            <TextBlock Text="5. Самая длинная река в мире?" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="200"></TextBlock>
+            <RadioButton Checked="answer" Unchecked="answer" GroupName="Answer3" Content="Янцзы" HorizontalAlignment="Left" Margin="0,5,0,10" VerticalAlignment="Top"/>
+            <RadioButton Checked="answer" Unchecked="answer" x:Name="correct5" GroupName="Answer3" Content="Нил" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top"/>
+            <RadioButton Checked="answer" Unchecked="answer" GroupName="Answer3" Content="Амазонка" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <StackPanel Margin="5" Grid.Row="1" Grid.Column="1">
+            <TextBlock Text="6. Какие из этих столиц находятся в Европе?" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="250"></TextBlock>
+            <CheckBox Checked="answer" Unchecked="answer" Content=" Оттава" HorizontalAlignment="Left" Margin="0,5,0,10" VerticalAlignment="Top"/>
+            <CheckBox Checked="answer" Unchecked="answer" x:Name="correct6" Content=" Вена" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top"/>
+            <CheckBox Checked="answer" Unchecked="answer" x:Name="correct62" Content=" Прага" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <StackPanel Margin="5" Grid.Row="2" Grid.Column="1">
+            <TextBlock Text="7. Год октябрьской революции?" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="200"></TextBlock>
+            <RadioButton Checked="answer" Unchecked="answer" GroupName="Answer4" Content="1905" HorizontalAlignment="Left" Margin="0,5,0,10" VerticalAlignment="Top"/>
+            <RadioButton Checked="answer" Unchecked="answer" x:Name="correct7" GroupName="Answer4" Content="1917" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top"/>
+            <RadioButton Checked="answer" Unchecked="answer" GroupName="Answer4" Content="1922" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <StackPanel Margin="5" Grid.Row="3" Grid.Column="1">
+            <TextBlock Text="8. Сколько хромосом у человека?" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="200"></TextBlock>
+            <CheckBox Checked="answer" Unchecked="answer" Content=" 45" HorizontalAlignment="Left" Margin="0,5,0,10" VerticalAlignment="Top"/>
+            <CheckBox Checked="answer" Unchecked="answer" x:Name="correct8" Content=" 46" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top"/>
+            <CheckBox Checked="answer" Unchecked="answer" Content=" 48" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </StackPanel>
+
+        <StackPanel Margin="5" Grid.Row="0" Grid.Column="2">
+            <TextBlock Text="9. Самая большая планета в СС?" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="200"></TextBlock>
+            <ComboBox x:Name="q9" HorizontalAlignment="Left" Margin="0,5,0,10" Width="200" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem>Юпитер</ComboBoxItem>
+                <ComboBoxItem x:Name="correct9">Сатурн</ComboBoxItem>
+                <ComboBoxItem>Венера</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+
+        <StackPanel Margin="5" Grid.Row="1" Grid.Column="2">
+            <TextBlock Text="10. Выберите млекопитающих" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="250"></TextBlock>
+            <ComboBox x:Name="q10" HorizontalAlignment="Left" Margin="0,5,0,10" Width="200" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem x:Name="correct10">Кит</ComboBoxItem>
+                <ComboBoxItem>Пингвин</ComboBoxItem>
+                <ComboBoxItem>Крокодил</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+
+        <StackPanel Margin="5" Grid.Row="2" Grid.Column="2">
+            <TextBlock Text="11. Что означает Au?" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="200"></TextBlock>
+            <ComboBox x:Name="q11" HorizontalAlignment="Left" Margin="0,5,0,10" Width="200" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem>Железо</ComboBoxItem>
+                <ComboBoxItem>Серебро</ComboBoxItem>
+                <ComboBoxItem x:Name="correct11">Золото</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+
+        <StackPanel Margin="5" Grid.Row="3" Grid.Column="2">
+            <TextBlock Text="12. Как зовут мою кошку?" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="200"></TextBlock>
+            <ComboBox x:Name="q12" HorizontalAlignment="Left" Margin="0,5,0,10" Width="200" Height="30" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem>Снежа</ComboBoxItem>
+                <ComboBoxItem x:Name="correct12">Стеша</ComboBoxItem>
+                <ComboBoxItem>Биба</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+
+        <Button Grid.Column="2" Grid.Row="3" Margin="5" Content="Завершить" HorizontalAlignment="Right" Height="20" Width="80" VerticalAlignment="Bottom" Click="endquiz_clk"/>  
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="кт19.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:кт19"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="result" HorizontalAlignment="Left" Margin="100,70,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="40" Width="600" FontSize="20"/>
+        <Button Width="150" Height="50" Content="Сохранить Результат" Click="SaveFile_Click"/>
+    </Grid>
+</Window>
